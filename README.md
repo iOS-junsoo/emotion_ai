@@ -1,3 +1,7 @@
+# Emotion AI - 멀티모달 감정 기반 AI 상담 시스템
+
+> 캡스톤 디자인 프로젝트
+
 ## Counseling-AI
 
 실시간 멀티모달 감정 인식과 LLM 응답 생성을 조합한 코어 서비스/학습 레포입니다.
@@ -55,5 +59,3 @@ bash scripts/run_vllm.sh
 - `ai_core/router/`: 감정→응답 톤/전략 매핑
 - `ai_core/io/`: Pydantic 스키마, Redis 상태 저장, Kafka 퍼블리시
 - `ai_core/service/`: 한 턴 오케스트레이션
-
-
