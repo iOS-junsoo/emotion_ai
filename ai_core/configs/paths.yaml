@@ -1,0 +1,6 @@
+paths:
+  data_root: "./data"
+  model_root: "./models"
+  cache_root: "./.cache"
+
+

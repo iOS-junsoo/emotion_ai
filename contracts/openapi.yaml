@@ -1,0 +1,34 @@
+openapi: 3.0.3
+info:
+  title: Counseling-AI API
+  version: 0.1.0
+paths:
+  /turn:
+    post:
+      summary: 한 턴 처리
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                utterance:
+                  type: string
+              required: [utterance]
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  response:
+                    type: string
+                  emotion:
+                    type: object
+                  meta:
+                    type: object
+
+

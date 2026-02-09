@@ -1,0 +1,117 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+.venv
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# Model Cache (매우 중요! 수십 GB)
+models/
+*.pth
+*.bin
+*.safetensors
+.cache/
+checkpoints/
+
+# Hugging Face Cache
+~/.cache/huggingface/
+~/.cache/whisper/
+~/.deepface/
+
+# Training Outputs
+training/outputs/
+training/logs/
+wandb/
+runs/
+
+# Data (선택적 - 큰 데이터셋 제외)
+data/raw/
+data/processed/
+*.csv
+*.parquet
+
+# Test Videos (용량 큰 파일)
+# test_video/*.mp4
+# test_video/*.avi
+# 주의: sample.mp4는 데모용이므로 포함하려면 위 두 줄 주석 유지
+
+# Audio/Image Test Files (선택적)
+# test_audio/*.wav
+# test_image/*.jpg
+# test_image/*.png
+
+# Jupyter Notebooks Checkpoints
+.ipynb_checkpoints/
+
+# Logs
+*.log
+logs/
+
+# Docker
+docker-compose.override.yml
+
+# OS
+Thumbs.db
+
+# Temporary Files
+*.tmp
+temp/
+tmp/
+
+# Zip Archives (배포용 파일 제외)
+*.zip
+
+# Redis Dumps
+*.rdb
+
+# Coverage Reports
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pytest
+.pytest_cache/
+
+# 기타 불필요한 마크다운 (선택적)
+CURRENT_PIPELINE_STATUS.md
+TODO.md

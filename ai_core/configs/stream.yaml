@@ -1,0 +1,11 @@
+window:
+  size: 10            # 최근 N창 길이
+  overlap: 0.5        # 창 겹침 비율
+smoothing:
+  method: "moving_avg_softmax"  # softmax 평균
+  alpha: 0.6
+thresholds:
+  vad_silence: 0.6
+  face_conf_min: 0.7
+
+

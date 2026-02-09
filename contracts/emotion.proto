@@ -1,0 +1,22 @@
+syntax = "proto3";
+package counseling_ai;
+
+message TurnRequest {
+  string utterance = 1;
+}
+
+message EmotionSnapshot {
+  map<string, float> aggregated = 1;
+}
+
+message TurnResponse {
+  string response = 1;
+  EmotionSnapshot emotion = 2;
+  map<string, string> meta = 3;
+}
+
+service CounselingAI {
+  rpc RunTurn (TurnRequest) returns (TurnResponse);
+}
+
+
